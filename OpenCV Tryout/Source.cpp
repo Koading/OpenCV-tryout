@@ -18,7 +18,6 @@ int main (int argc, char ** argv)
     Mat image;
     image = imread( argv[1], 1 );
 
-    
     if ( !image.data )
     {
         printf("No image data \n");
@@ -40,8 +39,6 @@ int main (int argc, char ** argv)
     
     imshow("Greyscale", im_gray);    
     waitKey(0);
-
-
 
     return 0;
 }
